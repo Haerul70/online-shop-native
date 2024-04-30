@@ -19,21 +19,24 @@
             <div class="logo">
                 <img src="images/logos.png" alt=" Logo">
             </div>
+            <!-- Navbar di sisi kiri -->
             <nav class="navbar" id="navbar">
-                <ul>
+                <ul class="flex space-x-4">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#shop">Shop</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+            </nav>
+        
+            <!-- Cart di sisi kanan -->
             <div class="cart">
                 <!-- Tombol untuk membuka modal -->
                 <button class="btn btn-primary" id="cartButton">
-                    <i class="bi bi-cart"></i> 
+                    <i class="bi bi-cart"></i>
                     <span id="cart-count">1</span>
                 </button>
-            </div>
-            </nav>
+        </div>
 
             <nav class="sidebar" id="sidebar">
                 <ul>
@@ -42,13 +45,6 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            <div class="cart">
-                <!-- Tombol untuk membuka modal -->
-                <button class="btn btn-primary" id="cartButton">
-                    <i class="bi bi-cart"></i>
-                    <span id="cart-count">1</span>
-                </button>
-            </div>
             </nav>
 
             <i class="bi bi-list" id="menu-toggle"></i>
@@ -293,6 +289,7 @@
 
     <!-- Cart Modal -->
     <div id="cartModal" class="modal">
+        <div class="container">
         <div class="modal-content">
             <div class="modal-header">
                 <h2>Keranjang Belanja</h2>
@@ -323,6 +320,7 @@
                 <button id="checkoutBtn" class="btn btn-primary">Checkout</button>
             </div>
         </div>
+    </div>
     </div>
 <!--/CART MODAL-->
 
